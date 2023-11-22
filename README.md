@@ -120,6 +120,7 @@ git merge main
 4. If any conflicts arrises during the merge of main to chosen branch, you might have to solve them manually and then stage them, then commit the changes.
 
 ```
+git add .
 git commit -m "Merge branch 'main' into currentBranchNameHere"
 ```
 
