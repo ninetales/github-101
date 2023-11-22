@@ -76,9 +76,9 @@ git clone <repository-url>
 cd <repository-directory>
 ```
 
-2. Create a new branch to work in:   ```
+2. Create a new branch to work in: 
 ```
-git checkout -b <ny-branch-namn>
+git checkout -b <new-branch-name>
 ```
 
 3. Make changes and then commit them
@@ -94,9 +94,11 @@ git push origin <new-branch-name>
 
 ## If someone creates a pull request and approves a merge to main (default branch)
 
+
 #### If you are the person that is merging a pull request
 
-1. Inform the other teammates that they should do a pull to their local main branch to get the latest updates.
+> Inform the other teammates that they should do a pull to their local main branch to get the latest updates.
+
 #### If you are the person that needs to update its main branch locally
 
 1. Checkout your main (default) branch and make a "pull" to update the local branch.
