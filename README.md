@@ -82,8 +82,12 @@ git checkout -b <new-branch-name>
 ```
 
 3. Make changes and then commit them
+
 ```
 git add .
+```
+
+```
 git commit -m "Describe changes"
 ```
 
