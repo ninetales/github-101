@@ -66,7 +66,9 @@
 **git pull**
 > Fetches changes from a remote repository and automatically merges them into your local branch, ensuring your local version is up-to-date with the remote repository.
 
-### How to clone a repo
+# General Instructions
+
+## How to clone a repo
 
 1. Clone the repo so that it exists locally:
 ```
