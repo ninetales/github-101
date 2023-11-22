@@ -117,7 +117,7 @@ git checkout <chosen-branch>
 git merge main
 ```
 
-4. If any conflicts arrises during the merge of main to chosen branch, you might have to solve them manually and then stage them, then commit the changes.
+4. If any conflicts arrises during the merge of main to chosen branch, you might have to solve them manually and then commit the changes.
 
 ```
 git add .
