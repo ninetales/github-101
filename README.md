@@ -69,6 +69,7 @@
 # General Instructions
 
 ## How to clone a repo
+Note: Origin is referring to the remote repository. Therefore, when you run git push origin <new-branch-name>, it pushes your new branch to the remote repository named "origin". It's essentially a shortcut for specifying the full URL of the remote repository.
 
 1. Clone the repo so that it exists locally:
 ```
