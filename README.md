@@ -119,7 +119,7 @@ git merge main
 
 4. If any conflicts arrises during the merge of main to chosen branch, you might have to solve them manually and then commit the changes.
 
-Stages all files that are currently tracked by Git for the next commit
+Stages all files that are currently tracked by Git for the next commit. Can be read as "git add all".
 ```
 git add .
 ```
