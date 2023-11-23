@@ -147,3 +147,26 @@ git commit -m "Merge branch 'main' into <current branch here>"
 git push origin <chosen-branch>
 ```
 
+## How to review someones pull request locally
+
+1. Open the repository in your Git client
+2. Navigate to the main (default) branch
+```
+git checkout main
+```
+3. Fetch the latest changes from the remote repository
+```
+git fetch origin
+```
+This will fetch the latest changes from the remote repository and update your local copy of the repository.
+
+4. To create a local tracking branch for a remote branch
+```
+git checkout -b <local-branch-name> origin/<remote-branch-name>
+```
+This will create a new local branch named <local-branch-name> that tracks the remote branch named <remote-branch-name>
+
+5. Once you have created a local tracking branch for a remote branch, you can see the remote branch in the list of local branches. To see the list of local branches, you can use the following command:
+```
+git branch
+```
