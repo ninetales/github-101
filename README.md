@@ -68,34 +68,43 @@
 
 # General Instructions
 
-## How to clone a repo
+## How to clone a repo and start working in a branch
 Note: Origin is referring to the remote repository. Therefore, when you run git push origin <new-branch-name>, it pushes your new branch to the remote repository named "origin". It's essentially a shortcut for specifying the full URL of the remote repository.
 
-1. Clone the repo so that it exists locally:
+1. On GitHub.com, navigate to the main page of the repository.
+2. Above the list of files, click Code.
+3. Copy the URL for the repository.
+4. Open Terminal.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type git clone, and then paste the URL you copied earlier.
+   
 ```
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
-2. Create a new branch to work in: 
+7. In the terminal, create a new branch to work in:
+
 ```
 git checkout -b <new-branch-name>
 ```
 
-3. Make changes and then commit them
+8. Stage the files after making any changes
 
 ```
 git add .
 ```
 
+9. Commit the files with a description
 ```
 git commit -m "Describe changes"
 ```
 
-4. Push branch to Github
+10. Push branch to Github
 ```
 git push origin <new-branch-name>
 ```
+
+Source: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
 ## If someone creates a pull request and approves a merge to main (default branch)
 
