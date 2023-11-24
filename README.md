@@ -173,22 +173,22 @@ git branch
 
 ## How to clone a repository and push it to your own
 
-1. Open the terminal on your computer
-2. Navigate to where you want to store the cloned repository
-3. Now clone the repository 
+1. Open the terminal on your computer.
+2. Navigate to where you want to store the cloned repository.
+3. Clone the repository:
 ```
 git clone https://github.com/USERNAME/REPOSITORY
 ```
-4. Now navigate to the repository
+4. Navigate to the repository
 ```
-cd <branch-name>
+cd REPOSITORY
 ```
-5. To upload it to you repository, you will have to change the origin. The "git remote rename origin upstream" command changes the name of the remote repository "origin" to "upstream". This can be useful if you want a more descriptive name for your remote repository, or if you want to avoid confusing it with other remote repositories that you use.
+5. (Optional step) To upload it to your repository, you can change the origin. The following command is optional and renames the remote repository "origin" to "upstream":
 ```
 git remote rename origin upstream 
 ```
-6. Now, go to your github account and create an empty repository and give it a name.
-7. Now you are going to add your own repository as origin
+6. Now, go to your GitHub account and create an empty repository and give it a name.
+7. Add your own repository as the origin:
 ```
 git remote add origin <https://github.com/YOUR-USERNAME/YOUR-NEW-REPOSITORY>
 ```
