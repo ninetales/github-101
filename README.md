@@ -172,6 +172,9 @@ git branch
 ```
 
 ## How to clone a repository and push it to your own
+> Why do this and not fork a repository instead? It depends whether the repository is public or private. Deleting a public repository will not delete any forks of the repository. However, deleting a private repository will delete all forks of the repository. If the repository is private, and you're concerned about the possibility of the owner deleting it, cloning the repository and pushing it to your own private repository might be a safer option. This way, you have full control over the repository, and its existence is not dependent on the original owner's decisions.
+
+Source: https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository
 
 1. Open the terminal on your computer.
 2. Navigate to where you want to store the cloned repository.
