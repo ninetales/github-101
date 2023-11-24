@@ -183,12 +183,18 @@ git clone https://github.com/USERNAME/REPOSITORY
 ```
 cd REPOSITORY
 ```
-5. (Optional step) To upload it to your repository, you can change the origin. The following command is optional and renames the remote repository "origin" to "upstream":
+5. Now, go to your GitHub account and create an empty repository and give it a name.
+6. Now we are going to change where the repository syncs its code. Currently, it is syncing with the cloned repository. We want it to sync with the newly created one. Remove the cloned repository:
 ```
-git remote rename origin upstream 
+git remote remove origin
 ```
-6. Now, go to your GitHub account and create an empty repository and give it a name.
-7. Add your own repository as the origin:
+
+7. Create a new branch with a name (in this case called main)
+```
+git branch -M main
+```
+
+8. Add your own repository as the origin:
 ```
 git remote add origin <https://github.com/YOUR-USERNAME/YOUR-NEW-REPOSITORY>
 ```
