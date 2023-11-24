@@ -170,3 +170,34 @@ This will create a new local branch named <local-branch-name> that tracks the re
 ```
 git branch
 ```
+
+## How to clone a repository and push it to your own
+
+1. Open the terminal on your computer
+2. Navigate to where you want to store the cloned repository
+3. Now clone the repository 
+```
+git clone https://github.com/USERNAME/REPOSITORY
+```
+4. Now navigate to the repository
+```
+cd <branch-name>
+```
+5. To upload it to you repository, you will have to change the origin. The "git remote rename origin upstream" command changes the name of the remote repository "origin" to "upstream". This can be useful if you want a more descriptive name for your remote repository, or if you want to avoid confusing it with other remote repositories that you use.
+```
+git remote rename origin upstream 
+```
+6. Now, go to your github account and create an empty repository and give it a name.
+7. Now you are going to add your own repository as origin
+```
+git remote add origin <https://github.com/YOUR-USERNAME/YOUR-NEW-REPOSITORY>
+```
+8. Now you are going to push the files to your own repository.
+   The command "git push -u origin main" serves two purposes:
+- Pushing Changes: It sends the changes from your local branch (main) to the remote repository named "origin."
+- Setting Upstream: The -u flag establishes a link between your local branch and the remote branch (origin/main). This means future git push and git pull commands can be executed without specifying the branch, as Git will use the established link for reference.
+
+In essence, this command is used initially to set up the connection between your local and remote branches, enabling seamless pushing and pulling afterward without explicit branch specification.
+```
+git push -u origin main
+```
